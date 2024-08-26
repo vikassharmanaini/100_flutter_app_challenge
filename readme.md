@@ -19,7 +19,7 @@ This repository is a collection of 100 Flutter apps developed over 100 days. Eac
 ## Project Structure
 
 The repository is organized into 100 folders, each representing an individual app. Each folder contains the complete codebase for that app, including `lib`, `assets`, `test`, and other necessary files.
-
+```bash
 100-days-flutter-apps/ 
 │ ├── app_01_to_do_list/
 │ ├── lib/
@@ -37,7 +37,7 @@ The repository is organized into 100 folders, each representing an individual ap
 ├── lib/ 
 ├── pubspec.yaml 
 └── README.md
-
+```
 
 ## List of Apps
 
@@ -150,11 +150,11 @@ To get started with any of these apps, clone the repository to your local machin
 
 ```bash
 git clone https://github.com/yourusername/100-days-flutter-apps.git
-
+```
 Navigate to the app you want to explore:
-
+```bash
 cd 100-days-flutter-apps/app_01_to_do_list
-
+```
 Running the Apps
 Ensure you have Flutter installed on your system. If not, follow the official Flutter installation guide.
 
@@ -165,8 +165,9 @@ Run flutter pub get to install dependencies.
 Connect your device or start an emulator.
 
 Run the app using:
-
+```bash
 flutter run
+```
 
 ## Contributing
 Contributions are welcome! If you have an idea for a new app or want to improve an existing one, feel free to fork the repository, make changes, and submit a pull request.
