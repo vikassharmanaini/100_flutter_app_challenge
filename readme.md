@@ -149,7 +149,7 @@ Here's a list of all the apps included in this repository:
 To get started with any of these apps, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/100-days-flutter-apps.git
+git clone https://github.com/vikassharmanaini/100_flutter_app_challenge.git
 ```
 Navigate to the app you want to explore:
 ```bash
