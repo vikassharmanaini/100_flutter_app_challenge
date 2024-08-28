@@ -1,8 +1,11 @@
 import 'package:app_01_todo_app/utils/app_assets.dart';
 import 'package:app_01_todo_app/utils/app_colors.dart';
+import 'package:app_01_todo_app/utils/app_routes.dart';
 import 'package:app_01_todo_app/widgets/app_commmon.dart';
+import 'package:app_01_todo_app/widgets/app_primmary_button.dart';
 import 'package:app_01_todo_app/widgets/backgrounds/focused_background.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:svg_flutter/svg.dart';
 
 class StartScreen extends StatelessWidget {
@@ -59,20 +62,10 @@ class StartScreen extends StatelessWidget {
                   ),
                   vert_space2,
                   vert_space1,
-                  Container(
-                    height: 50,
-                    margin: const EdgeInsets.symmetric(horizontal: 20),
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: AppColors().col1),
-                    child: Center(
-                        child: Text(
-                      "Let's Start",
-                      style: Theme.of(context)
-                          .textTheme
-                          .titleMedium!
-                          .copyWith(color: Colors.white),
-                    )),
+                  app_primmary_button(
+                    onTap: () {
+                      Get.toNamed(AppRoutes.home);
+                    },
                   ),
                   vert_space2,
                   vert_space2,

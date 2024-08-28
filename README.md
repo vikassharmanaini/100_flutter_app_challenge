@@ -1,6 +1,6 @@
-# 100 Days of Flutter Apps Challenge
+# 100 Flutter Apps Challenge
 
-Welcome to the **100 Days of Flutter Apps Challenge** repository! This project contains 100 different Flutter apps developed as part of a challenge to learn and experiment with various features of the Flutter framework. Each app is a standalone project, demonstrating different concepts, functionalities, and UI elements.
+Welcome to the **100 Flutter Apps Challenge** repository! This project contains 100 different Flutter apps developed as part of a challenge to learn and experiment with various features of the Flutter framework. Each app is a standalone project, demonstrating different concepts, functionalities, and UI elements.
 
 ## Table of Contents
 
@@ -14,29 +14,31 @@ Welcome to the **100 Days of Flutter Apps Challenge** repository! This project c
 
 ## Introduction
 
-This repository is a collection of 100 Flutter apps developed over 100 days. Each app is designed to showcase different aspects of Flutter development, from simple UI elements to complex functionalities like state management, API integration, and more. The goal is to explore, learn, and provide a reference for other developers interested in Flutter.
+This repository is a collection of 100 Flutter apps developed over this year 2024. Each app is designed to showcase different aspects of Flutter development, from simple UI elements to complex functionalities like state management, API integration, and more. The goal is to explore, learn, and provide a reference for other developers interested in Flutter.
 
 ## Project Structure
 
 The repository is organized into 100 folders, each representing an individual app. Each folder contains the complete codebase for that app, including `lib`, `assets`, `test`, and other necessary files.
 ```bash
 100-days-flutter-apps/ 
-│ ├── app_01_to_do_list/
-│ ├── lib/
-│ ├── pubspec.yaml
-│ └── README.md 
-│ ├── app_02_habit_tracker/ 
-│ ├── lib/ 
-│ ├── pubspec.yaml 
-│ └── README.md 
-│ ├── app_03_pomodoro_timer/ 
-│ ├── lib/ 
-│ ├── pubspec.yaml 
-│ └── README.md 
-│ ... │ └── app_100_dream_journal/ 
-├── lib/ 
-├── pubspec.yaml 
-└── README.md
+ ├── app_01_to_do_list/
+ │	├── lib/
+ │	├── pubspec.yaml
+ │	└── README.md 
+ ├── app_02_habit_tracker/ 
+ │	├── lib/ 
+ │	├── pubspec.yaml 
+ │	└── README.md 
+ ├── app_03_pomodoro_timer/ 
+ │	├── lib/ 
+ │	├── pubspec.yaml 
+ │	└── README.md 
+ ...
+ └── app_100_dream_journal/ 
+	├── lib/ 
+	├── pubspec.yaml 
+	└── README.md
+
 ```
 
 ## List of Apps

@@ -7,11 +7,13 @@ environment:
   sdk: ^3.5.0
 
 dependencies:
+  cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
   get:
   hive:
   svg_flutter: ^0.0.1
+  tabler_icons: ^2.5.0+1
 dev_dependencies:
   flutter_test:
     sdk: flutter

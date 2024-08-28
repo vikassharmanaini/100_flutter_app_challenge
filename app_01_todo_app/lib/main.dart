@@ -16,6 +16,7 @@ class MainApp extends StatelessWidget {
       themeMode: ThemeMode.light,
       darkTheme: AppDarkTheme,
       theme: AppThemeData,
+      initialRoute: AppRoutes.getStart,
       getPages: AppRoutes().page,
     );
   }
