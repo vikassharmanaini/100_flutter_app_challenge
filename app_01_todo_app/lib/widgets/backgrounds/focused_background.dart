@@ -16,7 +16,7 @@ class FocusedBackground extends StatelessWidget {
             width: Get.width,
             height: Get.height,
           ),
-          spots(AppColors().col2..withOpacity(0.01)),
+          spots(AppColors().col2.withOpacity(0.2)),
           Positioned(
               right: 0,
               top: Get.height * 0.3,

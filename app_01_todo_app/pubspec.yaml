@@ -10,6 +10,7 @@ dependencies:
   cached_network_image: ^3.4.1
   flutter:
     sdk: flutter
+  flutter_staggered_animations: ^1.1.1
   get:
   hive:
   svg_flutter: ^0.0.1

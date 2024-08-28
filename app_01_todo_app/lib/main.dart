@@ -13,11 +13,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      title: 'Todo App',
       themeMode: ThemeMode.light,
       darkTheme: AppDarkTheme,
       theme: AppThemeData,
       initialRoute: AppRoutes.getStart,
       getPages: AppRoutes().page,
+      defaultTransition: Transition.cupertino,
     );
   }
 }
