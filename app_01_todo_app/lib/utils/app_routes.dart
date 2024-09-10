@@ -7,7 +7,7 @@ class AppRoutes {
   static String getStart = "/start";
   static String home = "/";
   List<GetPage> page = [
-    GetPage(name: getStart, page: () => StartScreen()),
+    GetPage(name: getStart, page: () => const StartScreen()),
     GetPage(name: home, page: () => DashboardWrapper())
   ];
 }

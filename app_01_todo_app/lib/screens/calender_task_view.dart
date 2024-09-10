@@ -57,7 +57,7 @@ class CalenderTaskView extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: AppColors().col1.withOpacity(0.1),
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
                       blurRadius: 20,
@@ -94,7 +94,7 @@ class CalenderTaskView extends StatelessWidget {
                 margin: const EdgeInsets.symmetric(horizontal: 10),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  boxShadow: [
+                  boxShadow: const [
                     BoxShadow(
                       color: Colors.black12,
                       blurRadius: 20,

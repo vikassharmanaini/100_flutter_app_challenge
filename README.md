@@ -1,6 +1,6 @@
-# 100 Flutter Apps Challenge
+# 101 Flutter Apps Challenge
 
-Welcome to the **100 Flutter Apps Challenge** repository! This project contains 100 different Flutter apps developed as part of a challenge to learn and experiment with various features of the Flutter framework. Each app is a standalone project, demonstrating different concepts, functionalities, and UI elements.
+Welcome to the **101 Flutter Apps Challenge** repository! This project contains 101 different Flutter apps developed as part of a challenge to learn and experiment with various features of the Flutter framework. Each app is a standalone project, demonstrating different concepts, functionalities, and UI elements.
 
 ## Table of Contents
 
@@ -14,13 +14,14 @@ Welcome to the **100 Flutter Apps Challenge** repository! This project contains 
 
 ## Introduction
 
-This repository is a collection of 100 Flutter apps developed over this year 2024. Each app is designed to showcase different aspects of Flutter development, from simple UI elements to complex functionalities like state management, API integration, and more. The goal is to explore, learn, and provide a reference for other developers interested in Flutter.
+This repository is a collection of 101 Flutter apps developed over this year 2024. Each app is designed to showcase different aspects of Flutter development, from simple UI elements to complex functionalities like state management, API integration, and more. The goal is to explore, learn, and provide a reference for other developers interested in Flutter.
 
 ## Project Structure
 
-The repository is organized into 100 folders, each representing an individual app. Each folder contains the complete codebase for that app, including `lib`, `assets`, `test`, and other necessary files.
+The repository is organized into 101 folders, each representing an individual app. Each folder contains the complete codebase for that app, including `lib`, `assets`, `test`, and other necessary files.
+
 ```bash
-100-days-flutter-apps/ 
+101-days-flutter-apps/ 
  ├── app_01_to_do_list/
  │	├── lib/
  │	├── pubspec.yaml
@@ -34,7 +35,7 @@ The repository is organized into 100 folders, each representing an individual ap
  │	├── pubspec.yaml 
  │	└── README.md 
  ...
- └── app_100_dream_journal/ 
+ └── app_101_metaMask/ 
 	├── lib/ 
 	├── pubspec.yaml 
 	└── README.md
@@ -145,17 +146,21 @@ Here's a list of all the apps included in this repository:
 98. **Trivia Quiz with Rewards**
 99. **Coloring Book**
 100. **Dream Journal**
+101. **MetMask Clone**
+
 
 ## Getting Started
 
 To get started with any of these apps, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/vikassharmanaini/100_flutter_app_challenge.git
+git clone https://github.com/vikassharmanaini/101_flutter_app_challenge.git
 ```
+
 Navigate to the app you want to explore:
+
 ```bash
-cd 100-days-flutter-apps/app_01_to_do_list
+cd 101-days-flutter-apps/app_01_to_do_list
 ```
 Running the Apps
 Ensure you have Flutter installed on your system. If not, follow the official Flutter installation guide.
@@ -167,14 +172,17 @@ Run flutter pub get to install dependencies.
 Connect your device or start an emulator.
 
 Run the app using:
+
 ```bash
 flutter run
 ```
 
 ## Contributing
+
 Contributions are welcome! If you have an idea for a new app or want to improve an existing one, feel free to fork the repository, make changes, and submit a pull request.
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 This `README.md` file provides a clear and organized overview of the repository, making it easy for others to understand the purpose and navigate the code. Feel free to adjust the details according to your specific needs and preferences!

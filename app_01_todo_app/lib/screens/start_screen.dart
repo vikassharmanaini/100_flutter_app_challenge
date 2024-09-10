@@ -16,7 +16,7 @@ class StartScreen extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          FocusedBackground(),
+          const FocusedBackground(),
           Container(
             width: Get.width,
             height: Get.height,
@@ -67,7 +67,7 @@ class StartScreen extends StatelessWidget {
                     vert_space1,
                     app_primmary_button(
                       onTap: () {
-                        Get.toNamed(AppRoutes.home);
+                        Get.offAllNamed(AppRoutes.home);
                       },
                     ),
                     vert_space2,

@@ -2,9 +2,9 @@ import 'package:app_01_todo_app/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class app_primmary_button extends StatelessWidget {
-  const app_primmary_button({super.key, this.onTap});
+  const app_primmary_button({super.key, this.onTap, this.label});
   final onTap;
-
+  final label;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -16,7 +16,7 @@ class app_primmary_button extends StatelessWidget {
         onTap: onTap,
         child: Center(
             child: Text(
-          "Let's Start",
+          label ?? "Let's Start",
           style: Theme.of(context)
               .textTheme
               .titleMedium!

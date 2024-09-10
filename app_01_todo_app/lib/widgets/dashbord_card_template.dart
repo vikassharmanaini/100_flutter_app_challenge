@@ -15,7 +15,7 @@ class dashbordCardTemplate extends StatelessWidget {
     return Container(
       height: 70,
       width: 200,
-      margin: EdgeInsets.only(right: 10),
+      margin: const EdgeInsets.only(right: 10),
       decoration: BoxDecoration(
         color: (backgroundColor as MaterialColor).shade100.withOpacity(0.8),
         borderRadius: BorderRadius.circular(10),
@@ -34,12 +34,12 @@ class dashbordCardTemplate extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
               ),
-              Spacer(),
+              const Spacer(),
               Builder(builder: (context) {
                 final color = AppColors().CardSoftColor[
                     Random().nextInt(AppColors().CardSoftColor.length)];
                 return Container(
-                  padding: EdgeInsets.all(5),
+                  padding: const EdgeInsets.all(5),
                   decoration: BoxDecoration(
                       color: backgroundColor
                           .withOpacity(0.1)

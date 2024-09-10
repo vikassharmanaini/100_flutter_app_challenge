@@ -1,6 +1,8 @@
 import 'dart:math';
 
+import 'package:app_01_todo_app/controllers/mainController.dart';
 import 'package:app_01_todo_app/utils/app_colors.dart';
+import 'package:app_01_todo_app/utils/app_contrants.dart';
 import 'package:app_01_todo_app/widgets/app_commmon.dart';
 import 'package:app_01_todo_app/widgets/app_theme_mode_switch.dart';
 import 'package:app_01_todo_app/widgets/backgrounds/focused_background.dart';
@@ -9,10 +11,12 @@ import 'package:app_01_todo_app/widgets/dashbord_task_group_card.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
+import 'package:get/get.dart';
 import 'package:tabler_icons/tabler_icons.dart';
 
 class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+  HomeScreen({super.key});
+  final mainController = Get.find<Maincontroller>();
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +33,7 @@ class HomeScreen extends StatelessWidget {
               children: [
                 vert_space1,
                 progreesCard(context),
-                vert_space2,  
+                vert_space2,
                 progessWidget(context),
                 vert_space2,
                 taskgrouplist(context)
@@ -54,10 +58,10 @@ class HomeScreen extends StatelessWidget {
         ),
         AnimationLimiter(
             child: ListView.builder(
-                physics: NeverScrollableScrollPhysics(),
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: 10,
                 shrinkWrap: true,
-                padding: EdgeInsets.only(top: 20, bottom: 10),
+                padding: const EdgeInsets.only(top: 20, bottom: 10),
                 itemBuilder: (_, i) => AnimationConfiguration.staggeredList(
                       position: i,
                       duration: const Duration(milliseconds: 975),
@@ -94,8 +98,8 @@ class HomeScreen extends StatelessWidget {
             child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: 5,
-                padding:
-                    EdgeInsets.symmetric(horizontal: 20).copyWith(right: 10),
+                padding: const EdgeInsets.symmetric(horizontal: 20)
+                    .copyWith(right: 10),
                 itemBuilder: (_, i) => AnimationConfiguration.staggeredList(
                     position: i,
                     duration: const Duration(milliseconds: 800),
@@ -159,11 +163,11 @@ class HomeScreen extends StatelessWidget {
             child: Stack(
               alignment: Alignment.center,
               children: [
-                SizedBox(
+                const SizedBox(
                   height: 50,
                   child: FittedBox(
                     fit: BoxFit.cover,
-                    child: const CircularProgressIndicator(
+                    child: CircularProgressIndicator(
                       strokeWidth: 4,
                       strokeCap: StrokeCap.round,
                       color: Colors.white70,
@@ -188,7 +192,7 @@ class HomeScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     color: Colors.white38),
-                child: Icon(
+                child: const Icon(
                   Icons.more_horiz,
                   color: Colors.white,
                 ),
@@ -207,10 +211,19 @@ class HomeScreen extends StatelessWidget {
     return Row(
       children: [
         hori_space1,
-        CircleAvatar(
-          radius: 25,
-          backgroundImage: CachedNetworkImageProvider(
-              "https://avatar.iran.liara.run/public/boy"),
+        GestureDetector(
+          onTap: () {
+           mainController. pageController.animateToPage(2,
+                duration: Durations.medium4, curve: Curves.decelerate);
+          },
+          child: Hero(
+            tag: "profileimg",
+            child: const CircleAvatar(
+              radius: 25,
+              backgroundImage: CachedNetworkImageProvider(
+                  "https://avatar.iran.liara.run/public/boy"),
+            ),
+          ),
         ),
         hori_space2,
         Expanded(
@@ -228,8 +241,8 @@ class HomeScreen extends StatelessWidget {
             ],
           ),
         ),
-        ThemeModeSwitch(),
-        Icon(TablerIcons.bell_filled),
+        const ThemeModeSwitch(),
+        const Icon(TablerIcons.bell_filled),
         hori_space2
       ],
     );

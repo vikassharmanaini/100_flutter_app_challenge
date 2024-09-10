@@ -13,6 +13,7 @@ dependencies:
   flutter_staggered_animations: ^1.1.1
   get:
   hive:
+  modal_bottom_sheet: ^3.0.0
   svg_flutter: ^0.0.1
   tabler_icons: ^2.5.0+1
 dev_dependencies:

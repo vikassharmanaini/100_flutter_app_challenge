@@ -21,7 +21,7 @@ class DashbordTaskGroupCard extends StatelessWidget {
         children: [
           hori_space2,
           Container(
-            padding: EdgeInsets.all(5),
+            padding:const EdgeInsets.all(5),
             decoration: BoxDecoration(
               color: (colorbase as MaterialColor).shade100,
               borderRadius: BorderRadius.circular(10),

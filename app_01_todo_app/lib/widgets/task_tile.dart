@@ -8,10 +8,10 @@ class TaskTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+      margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Colors.black12,
             blurRadius: 20,
@@ -32,7 +32,7 @@ class TaskTile extends StatelessWidget {
                 style: Theme.of(context).textTheme.bodySmall,
               )),
               Container(
-                padding: EdgeInsets.all(5),
+                padding: const EdgeInsets.all(5),
                 decoration: BoxDecoration(
                   color: (bgColors as MaterialColor).withOpacity(0.2),
                   borderRadius: BorderRadius.circular(5),
@@ -71,7 +71,7 @@ class TaskTile extends StatelessWidget {
                     .labelMedium!
                     .copyWith(color: AppColors().col1.withOpacity(0.6)),
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 5),
                 decoration: BoxDecoration(
